@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#0b0714">
+
+    <title>For My Kuchhupuchu 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background">
+        <div class="stars"></div>
+        <div class="particles"></div>
+        <div class="floating-hearts"></div>
+    </div>
+
+
+    <!-- =========================================
+         MUSIC
+    ========================================== -->
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button" aria-label="Play music">
+        🎵
+    </button>
+
+
+    <!-- =========================================
+         MAIN WEBSITE
+    ========================================== -->
+
+    <main id="app">
+
+
+        <!-- =====================================
+             SCREEN 1 — OPENING
+        ====================================== -->
+
+        <section id="screen-opening" class="screen active">
+
+            <div class="opening-content">
+
+                <!-- 3D heart will be created with CSS -->
+                <div class="hero-heart">
+                    <div class="heart-core"></div>
+                    <div class="heart-glow"></div>
+                </div>
+
+                <p class="opening-text">
+                    There's someone I wanna celebrate today... ❣️❣️
+                </p>
+
+                <button
+                    id="startButton"
+                    class="primary-button">
+                    ✨ There's more...
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 2 — GIFT
+        ====================================== -->
+
+        <section id="screen-gift" class="screen">
+
+            <div class="screen-content">
+
+                <p class="small-label">
+                    A little something for you...
+                </p>
+
+                <div id="giftBox" class="gift-box">
+
+                    <div class="gift-lid">
+                        <div class="gift-ribbon"></div>
+                    </div>
+
+                    <div class="gift-body">
+                        <div class="gift-ribbon vertical"></div>
+                        <div class="gift-ribbon horizontal"></div>
+                    </div>
+
+                </div>
+
+                <p class="gift-hint">
+                    Tap the gift 🎁
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 3 — BIRTHDAY REVEAL
+        ====================================== -->
+
+        <section id="screen-birthday" class="screen">
+
+            <div class="screen-content birthday-content">
+
+                <div class="birthday-cake-wrap">
+                    <img
+                        src="images/birthday-cake.gif"
+                        alt="Birthday cake"
+                        class="birthday-cake">
+                </div>
+
+                <p class="birthday-intro">
+                    And today is her day 🎂🎉🎊
+                </p>
+
+                <h1>
+                    Happy Birthday, my kuchhupuchu 🐹
+                </h1>
+
+                <button
+                    class="next-button"
+                    data-next="screen-story">
+                    Continue 💗
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 4 — OUR STORY
+        ====================================== -->
+
+        <section id="screen-story" class="screen">
+
+            <div class="screen-content story-content">
+
+                <div class="story-decoration">
+                    <img
+                        src="images/bouquet.gif"
+                        alt=""
+                        class="story-gif">
+                </div>
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <h2>
+                    It all started with a “Hi”
+                </h2>
+
+                <div class="story-card">
+
+                    <p>
+                        You texted me first,
+                    </p>
+
+                    <p>
+                        I replied, “Hi miss someone.” 😛
+                        how cliche
+                    </p>
+
+                </div>
+
+                <button
+                    class="next-button"
+                    data-next="screen-nicknames">
+                    And then... ✨
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 5 — NICKNAMES
+        ====================================== -->
+
+        <section id="screen-nicknames" class="screen">
+
+            <div class="screen-content nickname-content">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <h2>
+                    🐰 AND THEN CAME THE NICKNAMES... 😛
+                </h2>
+
+                <p class="nickname-intro">
+                    I don't know exactly when this happened...
+                </p>
+
+                <p class="nickname-intro">
+                    But somehow you went from 😗 Chikoo...
+                </p>
+
+
+                <div class="nickname-list">
+
+                    <span>Chikoo😗</span>
+                    <span>Kuchhupuchu🐹</span>
+                    <span>Baguli🐧</span>
+                    <span>Kuchipuchi🐹</span>
+                    <span>Gilgili Gilhari 💀</span>
+                    <span>Bunny🐇</span>
+                    <span>My bachha 🧑🏻‍🍼</span>
+                    <span>My Motu Bachha🫄🏻😆 heheh</span>
+                    <span>Thullu🐧</span>
+                    <span>Kuchukullu🐣</span>
+                    <span>Pookie🐥</span>
+                    <span>Moti🐧</span>
+                    <span>Moti Thullu😛🐧...</span>
+
+                </div>
+
+
+                <p class="nickname-ending">
+                    Hehe I know you absolutely did NOT approve
+                    of “Gilgili Gilhari” tho 😆
+                </p>
+
+
+                <button
+                    class="next-button"
+                    data-next="screen-memories">
+                    More memories 🌸
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 6 — LITTLE MEMORIES
+        ====================================== -->
+
+        <section id="screen-memories" class="screen">
+
+            <div class="screen-content memories-content">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <h2>
+                    Our little things 🫶🏻
+                </h2>
+
+
+                <!-- HAIR CARE -->
+
+                <div class="memory-block hair-care-block">
+
+                    <img
+                        src="images/hair-care.gif"
+                        alt="A cute little moment"
+                        class="memory-gif">
+
+                    <p>
+                        Some things are just...
+                        stupidly cute 👉🏻👈🏻
+                    </p>
+
+                </div>
+
+
+                <!-- LATE NIGHT TALKS -->
+
+                <div class="memory-block late-night-block">
+
+                    <img
+                        src="images/rose-crown.gif"
+                        alt=""
+                        class="memory-gif small-gif">
+
+                    <p>
+                        Or wanting to talk and argue even when it's already late 😛
+                        because behs bazi ke bina sukoon nhi milta dono ko 🙄👉🏻👈🏻
+                        gussa ni hona please
+                    </p>
+
+                </div>
+
+
+                <!-- DINNER MEMORY -->
+
+                <div class="memory-block dinner-block">
+
+                    <h3>
+                        And then there's this...
+                    </h3>
+
+                    <p>
+                        Just sitting there, eating like a baby,
+                        completely being yourself 🐥
+                    </p>
+
+                    <p>
+                        🤌🏻🤌🏻🤌🏻 Haaye cutest thing I've ever seen 🫠🫠🫠
+                        I mean how can someone look this cute just while having dinner? 😭❣️
+                    </p>
+
+                    <p>
+                        I don't know why, but watching you like that
+                        felt like peace 🫶🏻
+                    </p>
+
+                    <p>
+                        Sukoon hi kehdein 😛🤌🏻
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="next-button"
+                    data-next="screen-gussa">
+                    Okay... now the gussa part 😭
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 7 — GUSSA / ARGUMENTS
+        ====================================== -->
+
+        <section id="screen-gussa" class="screen">
+
+            <div class="screen-content gussa-content">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <h2>
+                    Okay... your gussa 😤
+                </h2>
+
+                <div class="gussa-gif-wrap">
+
+                    <img
+                        src="images/bear-gussa.gif"
+                        alt="Cute bears arguing"
+                        class="gussa-gif">
+
+                </div>
+
+
+                <div class="emotional-card">
+
+                    <p>
+                        We've had our arguments 🙄
+                    </p>
+
+                    <p>
+                        We've misunderstood each other 😭
+                    </p>
+
+                    <p>
+                        I've made mistakes 👉🏻👈🏻
+                    </p>
+
+                    <p>
+                        Sometimes things have gotten more emotional
+                        than either of us wanted 🥲
+                    </p>
+
+                    <div class="heart-divider">
+                        ♡
+                    </div>
+
+                    <p>
+                        But through all of it, one thing has never
+                        changed for me
+                    </p>
+
+                    <p class="important-line">
+                        👉🏻👈🏻 I care about you more than I can
+                        properly put into words 🫂
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="next-button"
+                    data-next="screen-final-thought">
+                    One last thing... 🥹
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 8 — FINAL THOUGHT
+        ====================================== -->
+
+        <section id="screen-final-thought" class="screen">
+
+            <div class="screen-content final-thought-content">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <div class="final-decoration">
+
+                    <img
+                        src="images/rose-crown.gif"
+                        alt=""
+                        class="final-gif">
+
+                </div>
+
+
+                <div class="final-text">
+
+                    <p>
+                        I don't know what the future has waiting for us...
+                    </p>
+
+                    <p>
+                        but I'm really, really glad that somehow,
+                        out of all the people in the world,
+                    </p>
+
+                    <p class="final-line">
+                        I found you 🥹
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="next-button final-button"
+                    data-next="screen-ending">
+                    🎂
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SCREEN 9 — FINAL BIRTHDAY
+        ====================================== -->
+
+        <section id="screen-ending" class="screen">
+
+            <div class="screen-content ending-content">
+
+                <div class="ending-cake">
+
+                    <img
+                        src="images/birthday-cake.gif"
+                        alt="Birthday cake"
+                        class="birthday-cake">
+
+                </div>
+
+
+                <h1>
+                    Happy Birthday 🥹❣️
+                </h1>
+
+                <p class="ending-message">
+                    I hope this year gives you everything
+                    your heart wishes for.
+                </p>
+
+                <div class="ending-hearts">
+                    ♡ ♡ ♡
+                </div>
+
+                <p class="ending-small">
+                    Made with way too much love and way too many
+                    nicknames 😛
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+  </html>
